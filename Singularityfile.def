@@ -19,7 +19,7 @@ From: ros:melodic
     git clone https://github.com/jackal/jackal_simulator.git --branch melodic-devel
     git clone https://github.com/jackal/jackal_desktop.git --branch melodic-devel
     git clone https://github.com/utexas-bwi/eband_local_planner.git
-    git clone https://gitlab.kuleuven.be/u0144428/free_space_motion_tube.git --branch barn_competion2023
+    git clone https://gitlab.kuleuven.be/u0144428/free_space_motion_tube.git --branch barn2023
 
     source /opt/ros/melodic/setup.bash
     cd ..
