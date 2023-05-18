@@ -7,10 +7,8 @@ planner_frequency: 20.0
 planner_patience: 0.0
 
 oscillation_timeout: 0.0
-oscillation_distance: 0.5
+oscillation_distance: 0.01
 
 recovery_behavior_enabled: false
 clearing_rotation_allowed: false
-
-max_planning_retries: -1
 
