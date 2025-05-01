@@ -26,8 +26,8 @@ From: ros:melodic
     
     source /opt/ros/melodic/setup.bash
     cd ..
-    rosdep init
-    rosdep update
+    rosdep init; rosdep update --rosdistro melodic
+    rosdep install -y --from-paths . --ignore-src --rosdistro=melodic
     source devel/setup.bash
     catkin_make
 
