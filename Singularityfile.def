@@ -20,16 +20,9 @@ From: ros:melodic
     git clone https://github.com/jackal/jackal_desktop.git --branch melodic-devel
     git clone https://github.com/romulortr/fsmt_ros.git
 
-    apt-get -y install ros-melodic-rviz
-    apt-get -y install ros-melodic-rosdoc-lite
-    apt-get -y install ros-melodic-tf2-ros
-    apt-get -y install ros-melodic-hector-gazebo-plugins
-    apt-get -y install ros-melodic-velodyne-description
-    apt-get -y install ros-melodic-gazebo-msgs
-    apt-get -y install ros-melodic-twist-mux
-    apt-get -y install ros-melodic-xacro
     apt-get -y install ros-melodic-base-local-planner
-    apt-get -y install ros-melodic-tf2-geometry-msgs
+    apt-get -y install ros-melodic-move-base
+    apt-get -y install ros-melodic-global-planner
     
     source /opt/ros/melodic/setup.bash
     cd ..
