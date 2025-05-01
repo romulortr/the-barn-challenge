@@ -19,6 +19,7 @@ From: ros:melodic
     git clone https://github.com/jackal/jackal_simulator.git --branch melodic-devel
     git clone https://github.com/jackal/jackal_desktop.git --branch melodic-devel
     git clone https://github.com/utexas-bwi/eband_local_planner.git
+    git clone https://github.com/romulortr/fsmt_ros.git
 
     source /opt/ros/melodic/setup.bash
     cd ..
