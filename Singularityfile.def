@@ -8,7 +8,7 @@ From: ros:melodic
     . /jackal_ws/src/the-barn-challenge
 
 %post -c /bin/bash
-    apt -y update; apt-get -y install python3-venv ros-melodic-navigation
+    apt -y update; apt-get -y install python3-venv
     python3 -m venv /venv
     export PATH="/venv/bin:$PATH"
     pip3 install --upgrade pip
@@ -18,13 +18,23 @@ From: ros:melodic
     git clone https://github.com/jackal/jackal.git --branch melodic-devel
     git clone https://github.com/jackal/jackal_simulator.git --branch melodic-devel
     git clone https://github.com/jackal/jackal_desktop.git --branch melodic-devel
-    git clone https://github.com/utexas-bwi/eband_local_planner.git
     git clone https://github.com/romulortr/fsmt_ros.git
 
+    apt-get -y install ros-melodic-rviz
+    apt-get -y install ros-melodic-rosdoc-lite
+    apt-get -y install ros-melodic-tf2-ros
+    apt-get -y install ros-melodic-hector-gazebo-plugins
+    apt-get -y install ros-melodic-velodyne-description
+    apt-get -y install ros-melodic-gazebo-msgs
+    apt-get -y install ros-melodic-twist-mux
+    apt-get -y install ros-melodic-xacro
+    apt-get -y install ros-melodic-base-local-planner
+    apt-get -y install ros-melodic-tf2-geometry-msgs
+    
     source /opt/ros/melodic/setup.bash
     cd ..
-    rosdep init; rosdep update
-    rosdep install -y --from-paths . --ignore-src --rosdistro=melodic
+    rosdep init
+    rosdep update
     source devel/setup.bash
     catkin_make
 
