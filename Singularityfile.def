@@ -20,9 +20,6 @@ From: ros:melodic
     git clone https://github.com/jackal/jackal_desktop.git --branch melodic-devel
     git clone https://github.com/romulortr/fsmt_ros.git
 
-    apt-get -y install ros-melodic-base-local-planner
-    apt-get -y install ros-melodic-move-base
-    apt-get -y install ros-melodic-global-planner
     
     source /opt/ros/melodic/setup.bash
     cd ..
